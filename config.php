@@ -41,7 +41,7 @@ Class Config {
         $this->loadAPC();
         $value = apc_fetch($key, $success);
         if (!$success) {
-            // if we get here one of two things have happaned:
+            // if we get here one of two things has happened:
             // 1 - APC is pooched
             // 2 - someone is trying to use a key that doesnt 
             //     exist in the ini file
